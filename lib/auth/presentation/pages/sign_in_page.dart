@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quick_notes/auth/application/sign_in_form/sign_in_form_bloc.dart';
+import 'package:quick_notes/auth/presentation/widgets/app_title_widget.dart';
 import 'package:quick_notes/auth/presentation/widgets/google_sign_up_button.dart';
 import 'package:quick_notes/auth/presentation/widgets/sign_in_form.dart';
 import 'package:quick_notes/injection.dart';
@@ -29,16 +30,7 @@ class SignInPage extends StatelessWidget {
               children: [
                 Container(
                   height: deviceHeight / 3,
-                  child: const Center(
-                    child: Text(
-                      "Quick Notes",
-                      style: TextStyle(
-                        fontFamily: 'Pacifico',
-                        fontSize: 48.0,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
+                  child: AppTitleWidget(),
                 ),
                 Container(
                   height: deviceHeight / 3 * 2,
