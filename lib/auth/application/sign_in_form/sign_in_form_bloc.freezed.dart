@@ -28,26 +28,19 @@ class _$SignInFormEventTearOff {
   }
 
 // ignore: unused_element
-  OnRegisterWithEmailAndPasswordPressed onRegisterWithEmailAndPasswordPressed(
-      String passwordStr) {
-    return OnRegisterWithEmailAndPasswordPressed(
-      passwordStr,
-    );
+  OnRegisterWithEmailAndPasswordPressed
+      onRegisterWithEmailAndPasswordPressed() {
+    return const OnRegisterWithEmailAndPasswordPressed();
   }
 
 // ignore: unused_element
-  OnSignInWithEmailAndPasswordPressed onSignInWithEmailAndPasswordPressed(
-      String passwordStr) {
-    return OnSignInWithEmailAndPasswordPressed(
-      passwordStr,
-    );
+  OnSignInWithEmailAndPasswordPressed onSignInWithEmailAndPasswordPressed() {
+    return const OnSignInWithEmailAndPasswordPressed();
   }
 
 // ignore: unused_element
-  OnSignInWithGoogle onSignInWithGoogle(String passwordStr) {
-    return OnSignInWithGoogle(
-      passwordStr,
-    );
+  OnSignInWithGoogle onSignInWithGoogle() {
+    return const OnSignInWithGoogle();
   }
 }
 
@@ -61,17 +54,17 @@ mixin _$SignInFormEvent {
   Result when<Result extends Object>({
     @required Result onEmailChange(String emailStr),
     @required Result onPasswordChange(String passwordStr),
-    @required Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithGoogle(String passwordStr),
+    @required Result onRegisterWithEmailAndPasswordPressed(),
+    @required Result onSignInWithEmailAndPasswordPressed(),
+    @required Result onSignInWithGoogle(),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result onEmailChange(String emailStr),
     Result onPasswordChange(String passwordStr),
-    Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithGoogle(String passwordStr),
+    Result onRegisterWithEmailAndPasswordPressed(),
+    Result onSignInWithEmailAndPasswordPressed(),
+    Result onSignInWithGoogle(),
     @required Result orElse(),
   });
   @optionalTypeArgs
@@ -179,9 +172,9 @@ class _$OnEmailChange implements OnEmailChange {
   Result when<Result extends Object>({
     @required Result onEmailChange(String emailStr),
     @required Result onPasswordChange(String passwordStr),
-    @required Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithGoogle(String passwordStr),
+    @required Result onRegisterWithEmailAndPasswordPressed(),
+    @required Result onSignInWithEmailAndPasswordPressed(),
+    @required Result onSignInWithGoogle(),
   }) {
     assert(onEmailChange != null);
     assert(onPasswordChange != null);
@@ -196,9 +189,9 @@ class _$OnEmailChange implements OnEmailChange {
   Result maybeWhen<Result extends Object>({
     Result onEmailChange(String emailStr),
     Result onPasswordChange(String passwordStr),
-    Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithGoogle(String passwordStr),
+    Result onRegisterWithEmailAndPasswordPressed(),
+    Result onSignInWithEmailAndPasswordPressed(),
+    Result onSignInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -319,9 +312,9 @@ class _$OnPasswordChange implements OnPasswordChange {
   Result when<Result extends Object>({
     @required Result onEmailChange(String emailStr),
     @required Result onPasswordChange(String passwordStr),
-    @required Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithGoogle(String passwordStr),
+    @required Result onRegisterWithEmailAndPasswordPressed(),
+    @required Result onSignInWithEmailAndPasswordPressed(),
+    @required Result onSignInWithGoogle(),
   }) {
     assert(onEmailChange != null);
     assert(onPasswordChange != null);
@@ -336,9 +329,9 @@ class _$OnPasswordChange implements OnPasswordChange {
   Result maybeWhen<Result extends Object>({
     Result onEmailChange(String emailStr),
     Result onPasswordChange(String passwordStr),
-    Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithGoogle(String passwordStr),
+    Result onRegisterWithEmailAndPasswordPressed(),
+    Result onSignInWithEmailAndPasswordPressed(),
+    Result onSignInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -402,7 +395,6 @@ abstract class $OnRegisterWithEmailAndPasswordPressedCopyWith<$Res> {
           OnRegisterWithEmailAndPasswordPressed value,
           $Res Function(OnRegisterWithEmailAndPasswordPressed) then) =
       _$OnRegisterWithEmailAndPasswordPressedCopyWithImpl<$Res>;
-  $Res call({String passwordStr});
 }
 
 /// @nodoc
@@ -417,65 +409,42 @@ class _$OnRegisterWithEmailAndPasswordPressedCopyWithImpl<$Res>
   @override
   OnRegisterWithEmailAndPasswordPressed get _value =>
       super._value as OnRegisterWithEmailAndPasswordPressed;
-
-  @override
-  $Res call({
-    Object passwordStr = freezed,
-  }) {
-    return _then(OnRegisterWithEmailAndPasswordPressed(
-      passwordStr == freezed ? _value.passwordStr : passwordStr as String,
-    ));
-  }
 }
 
 /// @nodoc
 class _$OnRegisterWithEmailAndPasswordPressed
     implements OnRegisterWithEmailAndPasswordPressed {
-  const _$OnRegisterWithEmailAndPasswordPressed(this.passwordStr)
-      : assert(passwordStr != null);
-
-  @override
-  final String passwordStr;
+  const _$OnRegisterWithEmailAndPasswordPressed();
 
   @override
   String toString() {
-    return 'SignInFormEvent.onRegisterWithEmailAndPasswordPressed(passwordStr: $passwordStr)';
+    return 'SignInFormEvent.onRegisterWithEmailAndPasswordPressed()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is OnRegisterWithEmailAndPasswordPressed &&
-            (identical(other.passwordStr, passwordStr) ||
-                const DeepCollectionEquality()
-                    .equals(other.passwordStr, passwordStr)));
+        (other is OnRegisterWithEmailAndPasswordPressed);
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(passwordStr);
-
-  @override
-  $OnRegisterWithEmailAndPasswordPressedCopyWith<
-          OnRegisterWithEmailAndPasswordPressed>
-      get copyWith => _$OnRegisterWithEmailAndPasswordPressedCopyWithImpl<
-          OnRegisterWithEmailAndPasswordPressed>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result onEmailChange(String emailStr),
     @required Result onPasswordChange(String passwordStr),
-    @required Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithGoogle(String passwordStr),
+    @required Result onRegisterWithEmailAndPasswordPressed(),
+    @required Result onSignInWithEmailAndPasswordPressed(),
+    @required Result onSignInWithGoogle(),
   }) {
     assert(onEmailChange != null);
     assert(onPasswordChange != null);
     assert(onRegisterWithEmailAndPasswordPressed != null);
     assert(onSignInWithEmailAndPasswordPressed != null);
     assert(onSignInWithGoogle != null);
-    return onRegisterWithEmailAndPasswordPressed(passwordStr);
+    return onRegisterWithEmailAndPasswordPressed();
   }
 
   @override
@@ -483,14 +452,14 @@ class _$OnRegisterWithEmailAndPasswordPressed
   Result maybeWhen<Result extends Object>({
     Result onEmailChange(String emailStr),
     Result onPasswordChange(String passwordStr),
-    Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithGoogle(String passwordStr),
+    Result onRegisterWithEmailAndPasswordPressed(),
+    Result onSignInWithEmailAndPasswordPressed(),
+    Result onSignInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
     if (onRegisterWithEmailAndPasswordPressed != null) {
-      return onRegisterWithEmailAndPasswordPressed(passwordStr);
+      return onRegisterWithEmailAndPasswordPressed();
     }
     return orElse();
   }
@@ -538,12 +507,8 @@ class _$OnRegisterWithEmailAndPasswordPressed
 
 abstract class OnRegisterWithEmailAndPasswordPressed
     implements SignInFormEvent {
-  const factory OnRegisterWithEmailAndPasswordPressed(String passwordStr) =
+  const factory OnRegisterWithEmailAndPasswordPressed() =
       _$OnRegisterWithEmailAndPasswordPressed;
-
-  String get passwordStr;
-  $OnRegisterWithEmailAndPasswordPressedCopyWith<
-      OnRegisterWithEmailAndPasswordPressed> get copyWith;
 }
 
 /// @nodoc
@@ -552,7 +517,6 @@ abstract class $OnSignInWithEmailAndPasswordPressedCopyWith<$Res> {
           OnSignInWithEmailAndPasswordPressed value,
           $Res Function(OnSignInWithEmailAndPasswordPressed) then) =
       _$OnSignInWithEmailAndPasswordPressedCopyWithImpl<$Res>;
-  $Res call({String passwordStr});
 }
 
 /// @nodoc
@@ -567,65 +531,42 @@ class _$OnSignInWithEmailAndPasswordPressedCopyWithImpl<$Res>
   @override
   OnSignInWithEmailAndPasswordPressed get _value =>
       super._value as OnSignInWithEmailAndPasswordPressed;
-
-  @override
-  $Res call({
-    Object passwordStr = freezed,
-  }) {
-    return _then(OnSignInWithEmailAndPasswordPressed(
-      passwordStr == freezed ? _value.passwordStr : passwordStr as String,
-    ));
-  }
 }
 
 /// @nodoc
 class _$OnSignInWithEmailAndPasswordPressed
     implements OnSignInWithEmailAndPasswordPressed {
-  const _$OnSignInWithEmailAndPasswordPressed(this.passwordStr)
-      : assert(passwordStr != null);
-
-  @override
-  final String passwordStr;
+  const _$OnSignInWithEmailAndPasswordPressed();
 
   @override
   String toString() {
-    return 'SignInFormEvent.onSignInWithEmailAndPasswordPressed(passwordStr: $passwordStr)';
+    return 'SignInFormEvent.onSignInWithEmailAndPasswordPressed()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is OnSignInWithEmailAndPasswordPressed &&
-            (identical(other.passwordStr, passwordStr) ||
-                const DeepCollectionEquality()
-                    .equals(other.passwordStr, passwordStr)));
+        (other is OnSignInWithEmailAndPasswordPressed);
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(passwordStr);
-
-  @override
-  $OnSignInWithEmailAndPasswordPressedCopyWith<
-          OnSignInWithEmailAndPasswordPressed>
-      get copyWith => _$OnSignInWithEmailAndPasswordPressedCopyWithImpl<
-          OnSignInWithEmailAndPasswordPressed>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result onEmailChange(String emailStr),
     @required Result onPasswordChange(String passwordStr),
-    @required Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithGoogle(String passwordStr),
+    @required Result onRegisterWithEmailAndPasswordPressed(),
+    @required Result onSignInWithEmailAndPasswordPressed(),
+    @required Result onSignInWithGoogle(),
   }) {
     assert(onEmailChange != null);
     assert(onPasswordChange != null);
     assert(onRegisterWithEmailAndPasswordPressed != null);
     assert(onSignInWithEmailAndPasswordPressed != null);
     assert(onSignInWithGoogle != null);
-    return onSignInWithEmailAndPasswordPressed(passwordStr);
+    return onSignInWithEmailAndPasswordPressed();
   }
 
   @override
@@ -633,14 +574,14 @@ class _$OnSignInWithEmailAndPasswordPressed
   Result maybeWhen<Result extends Object>({
     Result onEmailChange(String emailStr),
     Result onPasswordChange(String passwordStr),
-    Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithGoogle(String passwordStr),
+    Result onRegisterWithEmailAndPasswordPressed(),
+    Result onSignInWithEmailAndPasswordPressed(),
+    Result onSignInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
     if (onSignInWithEmailAndPasswordPressed != null) {
-      return onSignInWithEmailAndPasswordPressed(passwordStr);
+      return onSignInWithEmailAndPasswordPressed();
     }
     return orElse();
   }
@@ -687,12 +628,8 @@ class _$OnSignInWithEmailAndPasswordPressed
 }
 
 abstract class OnSignInWithEmailAndPasswordPressed implements SignInFormEvent {
-  const factory OnSignInWithEmailAndPasswordPressed(String passwordStr) =
+  const factory OnSignInWithEmailAndPasswordPressed() =
       _$OnSignInWithEmailAndPasswordPressed;
-
-  String get passwordStr;
-  $OnSignInWithEmailAndPasswordPressedCopyWith<
-      OnSignInWithEmailAndPasswordPressed> get copyWith;
 }
 
 /// @nodoc
@@ -700,7 +637,6 @@ abstract class $OnSignInWithGoogleCopyWith<$Res> {
   factory $OnSignInWithGoogleCopyWith(
           OnSignInWithGoogle value, $Res Function(OnSignInWithGoogle) then) =
       _$OnSignInWithGoogleCopyWithImpl<$Res>;
-  $Res call({String passwordStr});
 }
 
 /// @nodoc
@@ -713,61 +649,40 @@ class _$OnSignInWithGoogleCopyWithImpl<$Res>
 
   @override
   OnSignInWithGoogle get _value => super._value as OnSignInWithGoogle;
-
-  @override
-  $Res call({
-    Object passwordStr = freezed,
-  }) {
-    return _then(OnSignInWithGoogle(
-      passwordStr == freezed ? _value.passwordStr : passwordStr as String,
-    ));
-  }
 }
 
 /// @nodoc
 class _$OnSignInWithGoogle implements OnSignInWithGoogle {
-  const _$OnSignInWithGoogle(this.passwordStr) : assert(passwordStr != null);
-
-  @override
-  final String passwordStr;
+  const _$OnSignInWithGoogle();
 
   @override
   String toString() {
-    return 'SignInFormEvent.onSignInWithGoogle(passwordStr: $passwordStr)';
+    return 'SignInFormEvent.onSignInWithGoogle()';
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other is OnSignInWithGoogle &&
-            (identical(other.passwordStr, passwordStr) ||
-                const DeepCollectionEquality()
-                    .equals(other.passwordStr, passwordStr)));
+    return identical(this, other) || (other is OnSignInWithGoogle);
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(passwordStr);
-
-  @override
-  $OnSignInWithGoogleCopyWith<OnSignInWithGoogle> get copyWith =>
-      _$OnSignInWithGoogleCopyWithImpl<OnSignInWithGoogle>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result onEmailChange(String emailStr),
     @required Result onPasswordChange(String passwordStr),
-    @required Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    @required Result onSignInWithGoogle(String passwordStr),
+    @required Result onRegisterWithEmailAndPasswordPressed(),
+    @required Result onSignInWithEmailAndPasswordPressed(),
+    @required Result onSignInWithGoogle(),
   }) {
     assert(onEmailChange != null);
     assert(onPasswordChange != null);
     assert(onRegisterWithEmailAndPasswordPressed != null);
     assert(onSignInWithEmailAndPasswordPressed != null);
     assert(onSignInWithGoogle != null);
-    return onSignInWithGoogle(passwordStr);
+    return onSignInWithGoogle();
   }
 
   @override
@@ -775,14 +690,14 @@ class _$OnSignInWithGoogle implements OnSignInWithGoogle {
   Result maybeWhen<Result extends Object>({
     Result onEmailChange(String emailStr),
     Result onPasswordChange(String passwordStr),
-    Result onRegisterWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithEmailAndPasswordPressed(String passwordStr),
-    Result onSignInWithGoogle(String passwordStr),
+    Result onRegisterWithEmailAndPasswordPressed(),
+    Result onSignInWithEmailAndPasswordPressed(),
+    Result onSignInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
     if (onSignInWithGoogle != null) {
-      return onSignInWithGoogle(passwordStr);
+      return onSignInWithGoogle();
     }
     return orElse();
   }
@@ -829,10 +744,7 @@ class _$OnSignInWithGoogle implements OnSignInWithGoogle {
 }
 
 abstract class OnSignInWithGoogle implements SignInFormEvent {
-  const factory OnSignInWithGoogle(String passwordStr) = _$OnSignInWithGoogle;
-
-  String get passwordStr;
-  $OnSignInWithGoogleCopyWith<OnSignInWithGoogle> get copyWith;
+  const factory OnSignInWithGoogle() = _$OnSignInWithGoogle;
 }
 
 /// @nodoc
