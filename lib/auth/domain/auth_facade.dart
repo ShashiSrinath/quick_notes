@@ -4,6 +4,7 @@ import 'package:quick_notes/auth/domain/failures/auth_failures.dart';
 import 'package:quick_notes/auth/domain/value_objects/email_value_object.dart';
 import 'package:quick_notes/auth/domain/value_objects/password_value_object.dart';
 
+import 'entities/user.dart';
 import 'failures/auth_failures.dart';
 
 abstract class AuthFacade {
@@ -18,4 +19,7 @@ abstract class AuthFacade {
   });
 
   Future<Either<AuthFailure, Unit>> signInWithGoogle();
+
+  Future<void> signOut();
+  Future<Option<User>> getSignedInUser();
 }
