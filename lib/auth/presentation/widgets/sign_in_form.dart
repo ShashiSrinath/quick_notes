@@ -50,7 +50,13 @@ class SignInForm extends StatelessWidget {
               ),
               PasswordInputField(),
               const SizedBox(
-                height: 40,
+                height: 20,
+              ),
+              if (state.isSubmitting)
+                const CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white)),
+              const SizedBox(
+                height: 20,
               ),
               Row(
                 children: [
