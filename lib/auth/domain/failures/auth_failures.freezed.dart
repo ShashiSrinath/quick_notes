@@ -29,6 +29,27 @@ class _$AuthFailureTearOff {
   }
 
 // ignore: unused_element
+  _InvalidEmail invalidEmail() {
+    return const _InvalidEmail();
+  }
+
+// ignore: unused_element
+  _WeakPassword weakPassword() {
+    return const _WeakPassword();
+  }
+
+// ignore: unused_element
+  _UserDisabled userDisabled() {
+    return const _UserDisabled();
+  }
+
+// ignore: unused_element
+  _AccountExistsWithDifferentCredentials
+      accountExistsWithDifferentCredentials() {
+    return const _AccountExistsWithDifferentCredentials();
+  }
+
+// ignore: unused_element
   _invalidEmailAndPasswordCombination invalidEmailAndPasswordCombination() {
     return const _invalidEmailAndPasswordCombination();
   }
@@ -45,6 +66,10 @@ mixin _$AuthFailure {
     @required Result cancelledByUser(),
     @required Result serverError(),
     @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
     @required Result invalidEmailAndPasswordCombination(),
   });
   @optionalTypeArgs
@@ -52,6 +77,10 @@ mixin _$AuthFailure {
     Result cancelledByUser(),
     Result serverError(),
     Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
     Result invalidEmailAndPasswordCombination(),
     @required Result orElse(),
   });
@@ -60,6 +89,12 @@ mixin _$AuthFailure {
     @required Result cancelledByUser(_CancelledByUser value),
     @required Result serverError(_ServerError value),
     @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
     @required
         Result invalidEmailAndPasswordCombination(
             _invalidEmailAndPasswordCombination value),
@@ -69,6 +104,11 @@ mixin _$AuthFailure {
     Result cancelledByUser(_CancelledByUser value),
     Result serverError(_ServerError value),
     Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
     Result invalidEmailAndPasswordCombination(
         _invalidEmailAndPasswordCombination value),
     @required Result orElse(),
@@ -133,11 +173,19 @@ class _$_CancelledByUser implements _CancelledByUser {
     @required Result cancelledByUser(),
     @required Result serverError(),
     @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
     @required Result invalidEmailAndPasswordCombination(),
   }) {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return cancelledByUser();
   }
@@ -148,6 +196,10 @@ class _$_CancelledByUser implements _CancelledByUser {
     Result cancelledByUser(),
     Result serverError(),
     Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
     Result invalidEmailAndPasswordCombination(),
     @required Result orElse(),
   }) {
@@ -164,6 +216,12 @@ class _$_CancelledByUser implements _CancelledByUser {
     @required Result cancelledByUser(_CancelledByUser value),
     @required Result serverError(_ServerError value),
     @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
     @required
         Result invalidEmailAndPasswordCombination(
             _invalidEmailAndPasswordCombination value),
@@ -171,6 +229,10 @@ class _$_CancelledByUser implements _CancelledByUser {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return cancelledByUser(this);
   }
@@ -181,6 +243,11 @@ class _$_CancelledByUser implements _CancelledByUser {
     Result cancelledByUser(_CancelledByUser value),
     Result serverError(_ServerError value),
     Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
     Result invalidEmailAndPasswordCombination(
         _invalidEmailAndPasswordCombination value),
     @required Result orElse(),
@@ -238,11 +305,19 @@ class _$_ServerError implements _ServerError {
     @required Result cancelledByUser(),
     @required Result serverError(),
     @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
     @required Result invalidEmailAndPasswordCombination(),
   }) {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return serverError();
   }
@@ -253,6 +328,10 @@ class _$_ServerError implements _ServerError {
     Result cancelledByUser(),
     Result serverError(),
     Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
     Result invalidEmailAndPasswordCombination(),
     @required Result orElse(),
   }) {
@@ -269,6 +348,12 @@ class _$_ServerError implements _ServerError {
     @required Result cancelledByUser(_CancelledByUser value),
     @required Result serverError(_ServerError value),
     @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
     @required
         Result invalidEmailAndPasswordCombination(
             _invalidEmailAndPasswordCombination value),
@@ -276,6 +361,10 @@ class _$_ServerError implements _ServerError {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return serverError(this);
   }
@@ -286,6 +375,11 @@ class _$_ServerError implements _ServerError {
     Result cancelledByUser(_CancelledByUser value),
     Result serverError(_ServerError value),
     Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
     Result invalidEmailAndPasswordCombination(
         _invalidEmailAndPasswordCombination value),
     @required Result orElse(),
@@ -344,11 +438,19 @@ class _$_EmailAlreadyInUse implements _EmailAlreadyInUse {
     @required Result cancelledByUser(),
     @required Result serverError(),
     @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
     @required Result invalidEmailAndPasswordCombination(),
   }) {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return emailAlreadyInUse();
   }
@@ -359,6 +461,10 @@ class _$_EmailAlreadyInUse implements _EmailAlreadyInUse {
     Result cancelledByUser(),
     Result serverError(),
     Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
     Result invalidEmailAndPasswordCombination(),
     @required Result orElse(),
   }) {
@@ -375,6 +481,12 @@ class _$_EmailAlreadyInUse implements _EmailAlreadyInUse {
     @required Result cancelledByUser(_CancelledByUser value),
     @required Result serverError(_ServerError value),
     @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
     @required
         Result invalidEmailAndPasswordCombination(
             _invalidEmailAndPasswordCombination value),
@@ -382,6 +494,10 @@ class _$_EmailAlreadyInUse implements _EmailAlreadyInUse {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return emailAlreadyInUse(this);
   }
@@ -392,6 +508,11 @@ class _$_EmailAlreadyInUse implements _EmailAlreadyInUse {
     Result cancelledByUser(_CancelledByUser value),
     Result serverError(_ServerError value),
     Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
     Result invalidEmailAndPasswordCombination(
         _invalidEmailAndPasswordCombination value),
     @required Result orElse(),
@@ -406,6 +527,542 @@ class _$_EmailAlreadyInUse implements _EmailAlreadyInUse {
 
 abstract class _EmailAlreadyInUse implements AuthFailure {
   const factory _EmailAlreadyInUse() = _$_EmailAlreadyInUse;
+}
+
+/// @nodoc
+abstract class _$InvalidEmailCopyWith<$Res> {
+  factory _$InvalidEmailCopyWith(
+          _InvalidEmail value, $Res Function(_InvalidEmail) then) =
+      __$InvalidEmailCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$InvalidEmailCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
+    implements _$InvalidEmailCopyWith<$Res> {
+  __$InvalidEmailCopyWithImpl(
+      _InvalidEmail _value, $Res Function(_InvalidEmail) _then)
+      : super(_value, (v) => _then(v as _InvalidEmail));
+
+  @override
+  _InvalidEmail get _value => super._value as _InvalidEmail;
+}
+
+/// @nodoc
+class _$_InvalidEmail implements _InvalidEmail {
+  const _$_InvalidEmail();
+
+  @override
+  String toString() {
+    return 'AuthFailure.invalidEmail()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _InvalidEmail);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result cancelledByUser(),
+    @required Result serverError(),
+    @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
+    @required Result invalidEmailAndPasswordCombination(),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return invalidEmail();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result cancelledByUser(),
+    Result serverError(),
+    Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
+    Result invalidEmailAndPasswordCombination(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (invalidEmail != null) {
+      return invalidEmail();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result cancelledByUser(_CancelledByUser value),
+    @required Result serverError(_ServerError value),
+    @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
+    @required
+        Result invalidEmailAndPasswordCombination(
+            _invalidEmailAndPasswordCombination value),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return invalidEmail(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result cancelledByUser(_CancelledByUser value),
+    Result serverError(_ServerError value),
+    Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
+    Result invalidEmailAndPasswordCombination(
+        _invalidEmailAndPasswordCombination value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (invalidEmail != null) {
+      return invalidEmail(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _InvalidEmail implements AuthFailure {
+  const factory _InvalidEmail() = _$_InvalidEmail;
+}
+
+/// @nodoc
+abstract class _$WeakPasswordCopyWith<$Res> {
+  factory _$WeakPasswordCopyWith(
+          _WeakPassword value, $Res Function(_WeakPassword) then) =
+      __$WeakPasswordCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$WeakPasswordCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
+    implements _$WeakPasswordCopyWith<$Res> {
+  __$WeakPasswordCopyWithImpl(
+      _WeakPassword _value, $Res Function(_WeakPassword) _then)
+      : super(_value, (v) => _then(v as _WeakPassword));
+
+  @override
+  _WeakPassword get _value => super._value as _WeakPassword;
+}
+
+/// @nodoc
+class _$_WeakPassword implements _WeakPassword {
+  const _$_WeakPassword();
+
+  @override
+  String toString() {
+    return 'AuthFailure.weakPassword()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _WeakPassword);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result cancelledByUser(),
+    @required Result serverError(),
+    @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
+    @required Result invalidEmailAndPasswordCombination(),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return weakPassword();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result cancelledByUser(),
+    Result serverError(),
+    Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
+    Result invalidEmailAndPasswordCombination(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (weakPassword != null) {
+      return weakPassword();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result cancelledByUser(_CancelledByUser value),
+    @required Result serverError(_ServerError value),
+    @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
+    @required
+        Result invalidEmailAndPasswordCombination(
+            _invalidEmailAndPasswordCombination value),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return weakPassword(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result cancelledByUser(_CancelledByUser value),
+    Result serverError(_ServerError value),
+    Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
+    Result invalidEmailAndPasswordCombination(
+        _invalidEmailAndPasswordCombination value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (weakPassword != null) {
+      return weakPassword(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _WeakPassword implements AuthFailure {
+  const factory _WeakPassword() = _$_WeakPassword;
+}
+
+/// @nodoc
+abstract class _$UserDisabledCopyWith<$Res> {
+  factory _$UserDisabledCopyWith(
+          _UserDisabled value, $Res Function(_UserDisabled) then) =
+      __$UserDisabledCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$UserDisabledCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
+    implements _$UserDisabledCopyWith<$Res> {
+  __$UserDisabledCopyWithImpl(
+      _UserDisabled _value, $Res Function(_UserDisabled) _then)
+      : super(_value, (v) => _then(v as _UserDisabled));
+
+  @override
+  _UserDisabled get _value => super._value as _UserDisabled;
+}
+
+/// @nodoc
+class _$_UserDisabled implements _UserDisabled {
+  const _$_UserDisabled();
+
+  @override
+  String toString() {
+    return 'AuthFailure.userDisabled()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _UserDisabled);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result cancelledByUser(),
+    @required Result serverError(),
+    @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
+    @required Result invalidEmailAndPasswordCombination(),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return userDisabled();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result cancelledByUser(),
+    Result serverError(),
+    Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
+    Result invalidEmailAndPasswordCombination(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (userDisabled != null) {
+      return userDisabled();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result cancelledByUser(_CancelledByUser value),
+    @required Result serverError(_ServerError value),
+    @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
+    @required
+        Result invalidEmailAndPasswordCombination(
+            _invalidEmailAndPasswordCombination value),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return userDisabled(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result cancelledByUser(_CancelledByUser value),
+    Result serverError(_ServerError value),
+    Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
+    Result invalidEmailAndPasswordCombination(
+        _invalidEmailAndPasswordCombination value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (userDisabled != null) {
+      return userDisabled(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UserDisabled implements AuthFailure {
+  const factory _UserDisabled() = _$_UserDisabled;
+}
+
+/// @nodoc
+abstract class _$AccountExistsWithDifferentCredentialsCopyWith<$Res> {
+  factory _$AccountExistsWithDifferentCredentialsCopyWith(
+          _AccountExistsWithDifferentCredentials value,
+          $Res Function(_AccountExistsWithDifferentCredentials) then) =
+      __$AccountExistsWithDifferentCredentialsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$AccountExistsWithDifferentCredentialsCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res>
+    implements _$AccountExistsWithDifferentCredentialsCopyWith<$Res> {
+  __$AccountExistsWithDifferentCredentialsCopyWithImpl(
+      _AccountExistsWithDifferentCredentials _value,
+      $Res Function(_AccountExistsWithDifferentCredentials) _then)
+      : super(
+            _value, (v) => _then(v as _AccountExistsWithDifferentCredentials));
+
+  @override
+  _AccountExistsWithDifferentCredentials get _value =>
+      super._value as _AccountExistsWithDifferentCredentials;
+}
+
+/// @nodoc
+class _$_AccountExistsWithDifferentCredentials
+    implements _AccountExistsWithDifferentCredentials {
+  const _$_AccountExistsWithDifferentCredentials();
+
+  @override
+  String toString() {
+    return 'AuthFailure.accountExistsWithDifferentCredentials()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _AccountExistsWithDifferentCredentials);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result cancelledByUser(),
+    @required Result serverError(),
+    @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
+    @required Result invalidEmailAndPasswordCombination(),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return accountExistsWithDifferentCredentials();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result cancelledByUser(),
+    Result serverError(),
+    Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
+    Result invalidEmailAndPasswordCombination(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (accountExistsWithDifferentCredentials != null) {
+      return accountExistsWithDifferentCredentials();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result cancelledByUser(_CancelledByUser value),
+    @required Result serverError(_ServerError value),
+    @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
+    @required
+        Result invalidEmailAndPasswordCombination(
+            _invalidEmailAndPasswordCombination value),
+  }) {
+    assert(cancelledByUser != null);
+    assert(serverError != null);
+    assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
+    assert(invalidEmailAndPasswordCombination != null);
+    return accountExistsWithDifferentCredentials(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result cancelledByUser(_CancelledByUser value),
+    Result serverError(_ServerError value),
+    Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
+    Result invalidEmailAndPasswordCombination(
+        _invalidEmailAndPasswordCombination value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (accountExistsWithDifferentCredentials != null) {
+      return accountExistsWithDifferentCredentials(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AccountExistsWithDifferentCredentials implements AuthFailure {
+  const factory _AccountExistsWithDifferentCredentials() =
+      _$_AccountExistsWithDifferentCredentials;
 }
 
 /// @nodoc
@@ -455,11 +1112,19 @@ class _$_invalidEmailAndPasswordCombination
     @required Result cancelledByUser(),
     @required Result serverError(),
     @required Result emailAlreadyInUse(),
+    @required Result invalidEmail(),
+    @required Result weakPassword(),
+    @required Result userDisabled(),
+    @required Result accountExistsWithDifferentCredentials(),
     @required Result invalidEmailAndPasswordCombination(),
   }) {
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return invalidEmailAndPasswordCombination();
   }
@@ -470,6 +1135,10 @@ class _$_invalidEmailAndPasswordCombination
     Result cancelledByUser(),
     Result serverError(),
     Result emailAlreadyInUse(),
+    Result invalidEmail(),
+    Result weakPassword(),
+    Result userDisabled(),
+    Result accountExistsWithDifferentCredentials(),
     Result invalidEmailAndPasswordCombination(),
     @required Result orElse(),
   }) {
@@ -486,6 +1155,12 @@ class _$_invalidEmailAndPasswordCombination
     @required Result cancelledByUser(_CancelledByUser value),
     @required Result serverError(_ServerError value),
     @required Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    @required Result invalidEmail(_InvalidEmail value),
+    @required Result weakPassword(_WeakPassword value),
+    @required Result userDisabled(_UserDisabled value),
+    @required
+        Result accountExistsWithDifferentCredentials(
+            _AccountExistsWithDifferentCredentials value),
     @required
         Result invalidEmailAndPasswordCombination(
             _invalidEmailAndPasswordCombination value),
@@ -493,6 +1168,10 @@ class _$_invalidEmailAndPasswordCombination
     assert(cancelledByUser != null);
     assert(serverError != null);
     assert(emailAlreadyInUse != null);
+    assert(invalidEmail != null);
+    assert(weakPassword != null);
+    assert(userDisabled != null);
+    assert(accountExistsWithDifferentCredentials != null);
     assert(invalidEmailAndPasswordCombination != null);
     return invalidEmailAndPasswordCombination(this);
   }
@@ -503,6 +1182,11 @@ class _$_invalidEmailAndPasswordCombination
     Result cancelledByUser(_CancelledByUser value),
     Result serverError(_ServerError value),
     Result emailAlreadyInUse(_EmailAlreadyInUse value),
+    Result invalidEmail(_InvalidEmail value),
+    Result weakPassword(_WeakPassword value),
+    Result userDisabled(_UserDisabled value),
+    Result accountExistsWithDifferentCredentials(
+        _AccountExistsWithDifferentCredentials value),
     Result invalidEmailAndPasswordCombination(
         _invalidEmailAndPasswordCombination value),
     @required Result orElse(),
