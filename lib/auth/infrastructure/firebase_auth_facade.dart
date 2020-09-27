@@ -4,9 +4,12 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:injectable/injectable.dart';
 import 'package:meta/meta.dart';
 import 'package:quick_notes/auth/domain/auth_facade.dart';
+import 'package:quick_notes/auth/domain/entities/user.dart' as user_entity;
 import 'package:quick_notes/auth/domain/failures/auth_failures.dart';
 import 'package:quick_notes/auth/domain/value_objects/email_value_object.dart';
 import 'package:quick_notes/auth/domain/value_objects/password_value_object.dart';
+
+import 'firebase_user_mapper.dart';
 
 @LazySingleton(as: AuthFacade)
 class FirebaseAuthFacade implements AuthFacade {
@@ -95,4 +98,15 @@ class FirebaseAuthFacade implements AuthFacade {
       }
     }
   }
+
+  @override
+  Future<void> signOut() async {
+    await _googleSignIn.signOut();
+    await _firebaseAuth.signOut();
+  }
+
+  @override
+  Future<Option<user_entity.User>> getSignedInUser() async => optionOf(
+        _firebaseAuth.currentUser?.toDomain(),
+      );
 }
