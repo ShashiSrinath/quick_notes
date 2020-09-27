@@ -7,12 +7,11 @@ abstract class SignInFormEvent with _$SignInFormEvent {
   const factory SignInFormEvent.onPasswordChange(String passwordStr) =
       OnPasswordChange;
 
-  const factory SignInFormEvent.onRegisterWithEmailAndPasswordPressed(
-      String passwordStr) = OnRegisterWithEmailAndPasswordPressed;
+  const factory SignInFormEvent.onRegisterWithEmailAndPasswordPressed() =
+      OnRegisterWithEmailAndPasswordPressed;
 
-  const factory SignInFormEvent.onSignInWithEmailAndPasswordPressed(
-      String passwordStr) = OnSignInWithEmailAndPasswordPressed;
+  const factory SignInFormEvent.onSignInWithEmailAndPasswordPressed() =
+      OnSignInWithEmailAndPasswordPressed;
 
-  const factory SignInFormEvent.onSignInWithGoogle(String passwordStr) =
-      OnSignInWithGoogle;
+  const factory SignInFormEvent.onSignInWithGoogle() = OnSignInWithGoogle;
 }

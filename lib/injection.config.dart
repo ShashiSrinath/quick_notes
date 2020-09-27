@@ -17,14 +17,15 @@ import 'auth/application/sign_in_form/sign_in_form_bloc.dart';
 /// adds generated dependencies
 /// to the provided [GetIt] instance
 
-GetIt $initGetIt(
+Future<GetIt> $initGetIt(
   GetIt get, {
   String environment,
   EnvironmentFilter environmentFilter,
-}) {
+}) async {
   final gh = GetItHelper(get, environment, environmentFilter);
   final firebaseInjectableModule = _$FirebaseInjectableModule();
-  gh.lazySingleton<FirebaseAuth>(() => firebaseInjectableModule.firebaseAuth);
+  final firebaseAuth = await firebaseInjectableModule.firebaseAuth;
+  gh.lazySingleton<FirebaseAuth>(() => firebaseAuth);
   gh.lazySingleton<GoogleSignIn>(() => firebaseInjectableModule.googleSignIn);
   gh.lazySingleton<AuthFacade>(
       () => FirebaseAuthFacade(get<FirebaseAuth>(), get<GoogleSignIn>()));
