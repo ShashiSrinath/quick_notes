@@ -1,12 +1,14 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:injectable/injectable.dart';
 import 'package:meta/meta.dart';
 import 'package:quick_notes/auth/domain/auth_facade.dart';
 import 'package:quick_notes/auth/domain/failures/auth_failures.dart';
 import 'package:quick_notes/auth/domain/value_objects/email_value_object.dart';
 import 'package:quick_notes/auth/domain/value_objects/password_value_object.dart';
 
+@LazySingleton(as: AuthFacade)
 class FirebaseAuthFacade implements AuthFacade {
   final FirebaseAuth _firebaseAuth;
   final GoogleSignIn _googleSignIn;
